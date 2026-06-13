@@ -1,0 +1,67 @@
+{
+  "name": "@booga/bpayload",
+  "version": "0.1.0",
+  "description": "Payload v3 plugin embedding the b-suite discipline runtime into the CMS authoring UI.",
+  "license": "MIT",
+  "repository": "github:bvasilenko/bPayload",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./admin": {
+      "types": "./dist/admin/DirectivePanel.d.ts",
+      "import": "./dist/admin/DirectivePanel.js",
+      "require": "./dist/admin/DirectivePanel.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint . --max-warnings=0",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepack": "pnpm build"
+  },
+  "peerDependencies": {
+    "payload": "^3"
+  },
+  "peerDependenciesMeta": {
+    "payload": {
+      "optional": false
+    }
+  },
+  "dependencies": {
+    "@payloadcms/ui": "^3.85.1",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^22.15.32",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^9.29.0",
+    "globals": "^16.2.0",
+    "jsdom": "^26.1.0",
+    "payload": "^3.85.1",
+    "playwright": "^1.52.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.1",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@10.15.1",
+  "bin": {}
+}
