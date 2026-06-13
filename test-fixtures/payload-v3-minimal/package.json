@@ -1,0 +1,13 @@
+{
+  "name": "bpayload-fixture",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@booga/bpayload": "file:../..",
+    "@payloadcms/db-mongodb": "^3.85.1",
+    "payload": "^3.85.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
