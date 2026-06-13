@@ -1,5 +1,8 @@
 # bPayload
 
+Your content team writes copy in Payload: articles, product pages, legal disclosures. They use AI assistants in the admin UI to draft. With bPayload installed, the same discipline checks that protect your engineers run on those drafts. When a writer saves a document marked for review, the b-* tools fire: bground verifies factual claims against cited evidence, bsmell flags hedged or unsupported language, banchor checks alignment to the campaign brief. Verdicts appear inline next to the field in the same admin panel: no leaving the editor, no fact-check ping-pong, no after-the-fact retraction.
+
+
 Payload v3 plugin embedding the b-suite discipline runtime into the CMS authoring UI.
 
 ## Install
